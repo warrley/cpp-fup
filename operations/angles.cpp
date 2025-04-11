@@ -3,15 +3,17 @@
 using namespace std;
 
 int main() {
-    float rad, deg;
-    const float PI = 3.14;
+    float step, height, quant;
 
-    cout << "Enter the angle in degrees: ";
-    cin >> deg;
+    cout << "Enter the height of stair step: ";
+    cin >> step;
 
-    rad = deg * PI / 180;
+    cout << "Enter the total height of stair: ";
+    cin >> height;
 
-    cout << "The angle in radians is: " << rad;
+    quant = height / step;
+
+    cout << "You need to climb " << quant << " steps";
 
     return 0;
 }
