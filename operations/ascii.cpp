@@ -3,12 +3,14 @@
 using namespace std;
 
 int main() {
-    char letter;
+    char letter, newLetter;
 
     cout << "Enter a letter: ";
     cin >> letter;
 
-    cout << letter;
+    newLetter = letter - 32;
+
+    cout << newLetter;
 
     return 0;
 }
