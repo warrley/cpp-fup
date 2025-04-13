@@ -3,16 +3,16 @@
 using namespace std;
 
 int main() {
-    int number, thousand, hundread, ten, one;
+    int number, hundread, ten, one;
 
-    cout << "Enter a number 4 algarism: ";
+    cout << "Enter a number of 3 algarism: ";
     cin >> number;
 
-    thousand = number / 1000;
     hundread = number / 100;
-    ten = number / 10;
+    ten = ((number % 100) / 10);
+    one = number % 10;
 
-    cout << thousand << "\n" << hundread << "\n" << ten;
+    cout << one << ten << hundread;
 
     return 0;
 }
